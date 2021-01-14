@@ -6,4 +6,4 @@ export default {
   component: Button,
 }
 
-export const ButtonComponent = () => <Button label='button' onClick={() => { }} />;
+export const Sample1 = () => <Button label='button' onClick={() => { }} />;
