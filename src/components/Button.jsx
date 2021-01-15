@@ -1,9 +1,18 @@
-import React from 'react';
+import React from 'react'
 
-export const Button = ({ label, onClick }) => {
+export const Button = ({ label, onClick, bgColor }) => {
+  const buttonStyles = {
+    color: '#fff',
+    padding: '8px',
+    borderRadius: '8px',
+    backgroundColor: bgColor ? bgColor : 'gray',
+  }
   return (
-    <button onClick={onClick}>
+    <button
+      style={buttonStyles}
+      onClick={onClick}
+    >
       {label}
     </button>
-  );
-};
+  )
+}
