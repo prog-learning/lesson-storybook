@@ -26,6 +26,7 @@ export const MarkButton = ({ label, onClick, height, option = { mark: '●', bgC
     borderRadius: '8px',
     backgroundColor: option.bgColor ? option.bgColor : 'gray',
     height: height + 'px',
+    boxShadow: '0 3px 1px #333'
   }
   return (
     <button
