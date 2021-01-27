@@ -1,22 +1,31 @@
-# Lesson4
+# Lesson05
 
-## global.css や reset.css を反映させる
+## 静的ファイルを Storybook で表示させる
 
-実は sb 上ではグローバルな CSS は適応されていませんので,この方法を紹介します.
+### svg ファイル
 
-`.storybook/preview-head.html`を作成
+svg は`SvgButton.jsx`の書き方で OK
 
-```html
-<link rel="stylesheet" href="styles/reset.css" />
-<link rel="stylesheet" href="styles/globals.css" />
-```
+### 画像ファイル
 
-ここに書かれたタグは,sb の head タグ内に書かれることになります.script タグもかけます.
+どこからファイルを読み込ませるのかを設定してあげる必要がある
 
-また,sb の build コマンドを以下のように書き換えてください.
+前回同様に build command をいじります.
+今回は public から画像を読み込んで欲しいので,
 
 ```bash
-"storybook": "start-storybook -p 6006 -s ./src",
+"storybook": "start-storybook  -s ./public -p 6006",
 ```
 
-これで,`src/styles`にある css が読み込まれるはずです.
+これで`./public`配下にある静的なファイルを読み込んでくれるようになります.
+
+プロジェクトによって静的ファイルを置くフォルダが異なると思いますので,うまくいかないときは調べてみてください.
+
+⚠
+前回の global.css や reset.css を反映させたときの build command と組み合わせるときは,
+
+```bash
+"storybook": "start-storybook  -s ./src,./public -p 6006",
+```
+
+というようにコンマ区切りになります.

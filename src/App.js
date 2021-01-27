@@ -1,9 +1,13 @@
 import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import { ImageBox } from './components/ImageBox';
+import { SvgButton } from './components/SvgButton';
 
 function App() {
   return (
     <div className="App">
+      <ImageBox />
+      <SvgButton />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
