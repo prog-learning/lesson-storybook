@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button } from './Button';
 
 export default {
@@ -7,5 +6,5 @@ export default {
 };
 
 export const ButtonComponent = () => (
-  <Button label='button' onClick={() => {}} />
+  <Button label='buttonだよ' onClick={() => alert('on click!!')} />
 );
