@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const FontIcon = () => {
+export const FontIcon = () => {
   return <StyledFontIcon>Monoton</StyledFontIcon>;
 };
 
@@ -13,5 +13,3 @@ const StyledFontIcon = styled.div`
   background-color: #333;
   text-align: center;
 `;
-
-export default FontIcon;
