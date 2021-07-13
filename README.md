@@ -1,6 +1,18 @@
-# Lesson1
+# Lesson Storybook
 
-- Storybook
-  [https://storybook.js.org/](https://storybook.js.org/)
-- Storybook initialize
-- Create first storybook component
+React で Storybook を学ぶ
+
+## Storybook とは
+
+https://storybook.js.org/
+
+## Prep
+
+```bash
+yarn create react-app lesson-storybook
+cd lesson-storybook
+```
+
+```bash
+npx sb init
+```
