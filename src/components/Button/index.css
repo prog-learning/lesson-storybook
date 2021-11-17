@@ -1,10 +1,8 @@
 .my_button {
   background-color: limegreen;
   color: white;
-  border: none;
   border-radius: 999px;
   padding: 4px 10px;
-  cursor: pointer;
 }
 .my_button:hover {
   filter: brightness(0.9);

@@ -12,3 +12,7 @@
 .my_card p {
   font-size: 14px;
 }
+.my_card.praise {
+  /* .storybook/preview-head.htmlで読み込んでいるGoogle Fontsを使用 */
+  font-family: 'Praise', cursive;
+}

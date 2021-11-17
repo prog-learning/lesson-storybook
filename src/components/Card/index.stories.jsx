@@ -22,3 +22,11 @@ Sample.args = {
   text:
     '僕自身初学者だった頃に（今もそうだけど）「Storybookいいよ！」と言われた使ってみたかったけど、使い方も良さもわからなくて3回くらい挫折したので、そんな人をこれ以上生みださないために書きました。',
 };
+
+export const GoogleFontsSample = Template.bind({});
+GoogleFontsSample.args = {
+  title: 'Lesson Storybook',
+  text:
+    'Almost before we knew it, we had left the ground.Almost before we knew it, we had left the ground.Almost before we knew it, we had left the ground.Almost before we knew it, we had left the ground.Almost before we knew it, we had left the ground.',
+  isGoogleFonts: true,
+};
