@@ -1,0 +1,19 @@
+.my_button {
+  background-color: limegreen;
+  color: white;
+  border: none;
+  border-radius: 999px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+.my_button:hover {
+  filter: brightness(0.9);
+}
+.my_button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.my_button.large {
+  padding: 10px 28px;
+  font-size: 24px;
+}
